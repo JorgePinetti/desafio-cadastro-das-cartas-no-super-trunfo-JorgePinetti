@@ -10,6 +10,9 @@ int main()
 	float pibCidade;
 	int turismoCidade;
 
+	float densidadePopulacional;
+	float pibPerCapita;
+
 	printf("Super trunfo: Cadastro de cartas\n");
 
 	printf("\nCarta 1\n");
@@ -35,7 +38,10 @@ int main()
 	printf("Insira a qtde de pontos turisticos da cidade: ");
 	scanf("%d", &turismoCidade);
 
-	printf("\nCarta 1:\nEstado: %c\nCodigo: %s\nNome da cidade: %s\nPopulacaoo: %d\nArea: %.2f km2\nPIB: %.2f\nNumero de pontos turisticos: %d\n", estado, codigoCarta, nomeCidade, populacaoCidade, areaCidade, pibCidade, turismoCidade);
+	densidadePopulacional = populacaoCidade / areaCidade;
+	pibPerCapita = pibCidade / populacaoCidade;
+
+	printf("\nCarta 1:\nEstado: %c\nCodigo: %s\nNome da cidade: %s\nPopulacaoo: %d\nArea: %.2f km2\nPIB: %.2f\nNumero de pontos turisticos: %d\nDensidade populacional: %.2f hab/km2\nPIB per Capita: R$ %.2f\n", estado, codigoCarta, nomeCidade, populacaoCidade, areaCidade, pibCidade, turismoCidade,densidadePopulacional, pibPerCapita);
 
 	printf("\nCarta 2\n");
 
@@ -60,7 +66,10 @@ int main()
 	printf("Insira a qtde de pontos turisticos da cidade: ");
 	scanf("%d", &turismoCidade);
 
-	printf("\nCarta 2:\nEstado: %c\nCodigo: %s\nNome da cidade: %s\nPopulacaoo: %d\nArea: %.2f km2\nPIB: %.2f\nNumero de pontos turisticos: %d", estado, codigoCarta, nomeCidade, populacaoCidade, areaCidade, pibCidade, turismoCidade);
+	densidadePopulacional = populacaoCidade / areaCidade;
+	pibPerCapita = pibCidade / populacaoCidade;
+
+	printf("\nCarta 2:\nEstado: %c\nCodigo: %s\nNome da cidade: %s\nPopulacaoo: %d\nArea: %.2f km2\nPIB: %.2f\nNumero de pontos turisticos: %d\nDensidade populacional: %.2f hab/km2\nPIB per Capita: R$ %.2f\n", estado, codigoCarta, nomeCidade, populacaoCidade, areaCidade, pibCidade, turismoCidade,densidadePopulacional, pibPerCapita);
 
 	return 0;
 }
