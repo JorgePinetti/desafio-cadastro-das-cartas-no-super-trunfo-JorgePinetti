@@ -2,6 +2,7 @@
 int main()
 {
 
+    //Super trunfo
     // Variáveis para a Carta 1
     char estado1;
     char codigoCarta1[4];
